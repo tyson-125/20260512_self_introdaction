@@ -1,0 +1,136 @@
+/* ページ全体の基本的な設定です */
+body {
+    margin: 0;
+    padding: 0;
+    /* やさしいパステルカラーの背景色（パステルパープル系） */
+    background-color: #faf5ff;
+    /* 丸みがあって読みやすいフォントを設定 */
+    font-family: 'Kiwi Maru', serif;
+    color: #555555;
+    /* 画面の中央に配置するための設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* メインの白い枠（コンテナ）の設定です */
+.container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 20px;
+    /* ふんわりとした影をつけて浮き出ているように見せます */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* プロフィール写真の枠の設定です */
+.profile-image-frame {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    /* 丸い形にする設定 */
+    border-radius: 50%;
+    /* パステルピンクの背景色 */
+    background-color: #ffe6ea;
+    /* 少し太めの白い枠線 */
+    border: 4px solid #ffffff;
+    box-shadow: 0 5px 15px rgba(255, 182, 185, 0.3);
+    /* 「Photo」という文字を中央に配置するための設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 写真を差し替える時は、ここに背景画像を設定するか、中にimgタグを入れます */
+    overflow: hidden; /* 画像が丸い枠からはみ出さないようにします */
+}
+
+/* プロフィール画像自体の設定です */
+.profile-image {
+    width: 100%;
+    height: 100%;
+    /* 画像の縦横比を保ったまま、枠にぴったり合わせる設定です */
+    object-fit: cover;
+}
+
+/* 写真枠の中のプレースホルダー文字 */
+.placeholder-text {
+    color: #ffb6b9;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* 名前と職業の設定 */
+.header-section {
+    margin-bottom: 30px;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    color: #4a4a4a;
+}
+
+.job-title {
+    font-size: 1.1rem;
+    color: #cbaacb; /* パステルパープル */
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* 自己紹介文の設定 */
+.intro-section {
+    margin-bottom: 30px;
+    line-height: 1.8;
+    text-align: left;
+    background-color: #fff0f5; /* パステルピンク系のとても薄い色 */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.intro-section p {
+    margin: 0;
+}
+
+/* 趣味のセクションの設定 */
+.hobbies-section h2 {
+    font-size: 1.3rem;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+    /* 下線をつけて見出しらしくします */
+    border-bottom: 2px dashed #d8a7b1; /* パステルピンク */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.hobby-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hobby-list li {
+    background-color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+/* アニメーション用の初期状態（透明で少し下にある状態） */
+.fade-target {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* アニメーション後の状態（表示されて元の位置に戻る状態） */
+.fade-target.show {
+    opacity: 1;
+    transform: translateY(0);
+}
