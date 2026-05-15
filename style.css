@@ -94,8 +94,8 @@ body {
     margin: 0;
 }
 
-/* 趣味・好きな食べ物・SNSのセクションの設定 */
-.hobbies-section h2, .favorite-food-section h2, .sns-section h2 {
+/* 趣味・好きな食べ物のセクションの設定 */
+.hobbies-section h2, .favorite-food-section h2 {
     font-size: 1.3rem;
     color: #4a4a4a;
     margin-bottom: 15px;
@@ -120,32 +120,6 @@ body {
     border-radius: 20px;
     border: 1px solid #eeeeee;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-}
-
-/* SNSリンクの設定 */
-.sns-section {
-    margin-top: 30px;
-}
-
-.sns-links {
-    margin-top: 15px;
-}
-
-.sns-link {
-    display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.sns-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* アニメーション用の初期状態（透明で少し下にある状態） */
