@@ -94,8 +94,8 @@ body {
     margin: 0;
 }
 
-/* 趣味・好きな食べ物のセクションの設定 */
-.hobbies-section h2, .favorite-food-section h2 {
+/* 趣味・好きな食べ物・座右の銘のセクションの見出し設定 */
+.hobbies-section h2, .favorite-food-section h2, .motto-section h2 {
     font-size: 1.3rem;
     color: #4a4a4a;
     margin-bottom: 15px;
@@ -120,6 +120,28 @@ body {
     border-radius: 20px;
     border: 1px solid #eeeeee;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+/* 座右の銘セクションの設定 */
+.motto-section {
+    margin-bottom: 30px;
+}
+
+.motto-content {
+    margin-top: 10px;
+}
+
+.motto-text {
+    display: inline-block;
+    background-color: #f5f3ff; /* パステルパープル系の非常に薄い背景色 */
+    color: #7c3aed; /* 少し濃いパステルパープル */
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px dashed #c084fc; /* 点線のボーダーで可愛らしさを演出 */
+    box-shadow: 0 4px 10px rgba(124, 58, 237, 0.05);
+    letter-spacing: 2px;
 }
 
 /* アニメーション用の初期状態（透明で少し下にある状態） */
